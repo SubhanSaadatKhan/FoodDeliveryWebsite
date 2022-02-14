@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: grey; */
+}
+
+/* navigation */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;  /* this is to make the the background equal to the width of navbar*/
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* navigation: logo and image */
+
+#logo{
+    /* border: 2px solid red; */
+    margin: 7px 4px;
+}
+
+#logo img{
+    height: 58px;
+}
+
+/* navigation: list items */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    padding: 0px 32px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/* Home section */
+
+#home{
+    /* position: relative; */
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+}
+#home::before{
+    content: "";
+    background: url(../img/spaghetti-1932466_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 63%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+/* utility class */
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.services-container .h-primary{
+    margin-top: 0px;
+    /* border: 2px solid red; */
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    /* margin: 12px; */
+    text-align: center;
+}
+
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color: white;
+
+}
+
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#services{
+    
+    /* border: 2px solid red; */
+    /* background-color: khaki; */
+    margin: 20px 13px;
+    display: flex;
+}
+#services .box{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 174px;
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(170, 162, 162);
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+
+}
+.center{
+    text-align: center;
+}
+
+#client-section{
+    height: 200px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    background: url(../img/olive-oil-1412361_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 100px;
+}
+
+.client-item{
+    padding: 10px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url(../img/telephone-586266_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#contact-box{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
